@@ -6,7 +6,16 @@ import net.kzn.shoppingbackend.dto.Category;
 
 public interface CategoryDAO {
 	
-	List <Category> List();
+	
 	Category get(int id);
-
+	
+	List <Category> List();
+		
+	boolean add(Category category);
+	
+	boolean update(Category category);
+	
+	boolean delete(Category category);
+	
+	
 }
